@@ -1,5 +1,5 @@
 @media screen and (min-width: 760px) and (max-width: 1903px) {
-    
+
 }
 body {
     margin: 0;
@@ -46,6 +46,8 @@ body * {
     justify-content: space-between;
     height: 83px;
     align-items: center;
+    padding-left: 30px;
+    padding-right: 30px
 }
 .number {
     color: #E3B873;
@@ -154,7 +156,7 @@ body * {
 .middle-navigation{
     list-style: none;
     display: flex;
-    margin-left: 627px;
+    margin-left: 500px;
     gap: 40px;
     padding-top: 107px;
     
@@ -339,6 +341,7 @@ body * {
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+    justify-content: end;
 }
 .inputtext{
     font-family: 'Nunito Sans';
@@ -360,6 +363,9 @@ body * {
     border-bottom: solid 1px;
     background: transparent;
 }
+.input:focus{
+    outline: none;
+}
 .mark{
     display: flex;
     Width:290px;
@@ -374,6 +380,8 @@ body * {
     line-height: 163.68%;
     color: #181818;
     margin-top:51.24px;
+    align-items: center;
+    justify-content: space-between;
 }
 .datanav{
     margin:15px;
@@ -460,20 +468,37 @@ body * {
     display: flex;
     position: relative;
 }
+.cupboard{
+    background: url(../images/cupboard.png);
+    Width:1006px;
+    Height:645px;
+    top:-47px;
+    left:703px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
 .list-itemall{
+    display: grid;
+    padding-left: 280px;
+    padding-top: 60px;
+}
+.list-itemwrap {
     display: flex;
+    margin-bottom: 100px;
 }
 .list-item{
     background: #E3B873;
     border: 8px solid #FFFFFF;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
     border-radius: 30px;
-    Width:48px;
-    Height:48px;
+    Width:65px;
+    Height:65px;
     text-align: center;
     position: relative;
     display: flex;
-
+    align-items: center;
+    justify-content: center;
+    margin-right: 11px;
 }
 .color{
     font-family: 'Yeseva One';
@@ -503,9 +528,13 @@ body * {
 .data2{
     flex-direction: column; 
     justify-content: center;
+    margin-left: 49px;
 }
 .pig{
     display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-right: 130px;
 }
 .pigwrap{
     background: #E3B873;
@@ -513,6 +542,11 @@ body * {
     Width:72px;
     Height:72px;
     border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 17px;
+    padding-left: 17px;
+    margin-right: 25px;
 }
 .pigtext{
     font-family: 'Nunito Sans';
@@ -528,7 +562,7 @@ body * {
     justify-content: center;
 }
 .page5{
-    max-width: 1440px;
+    max-width: 1250px;
     margin: 0 auto;
     background-size: cover;
     position: relative;
@@ -581,14 +615,17 @@ body * {
 }
 .page5ol{
     list-style-type:none;
+    margin-left: -40px;
 }
 .img5page{
     flex-direction: column; 
     z-index: 1;
-    margin-left: 215px;
+    margin-left: 210px;
 }
 .watchimage{
     margin-top: -41.16px;
+    Width:354px;
+    Height:557.88px;
 }
 .tvimage{
     margin-bottom: -41.2px;
@@ -653,6 +690,14 @@ body * {
     font-size: 18px;
     line-height: 23px;
     color: #181818;
+    align-content: center;
+    display: flex;
+    align-items: center;
+}
+.imgclient{
+    border-radius: 50px;
+    margin-right: 20px;
+    
 }
 .textclients{
     font-family: 'Nunito Sans';
@@ -693,6 +738,7 @@ body * {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
 }
 .data3{
     background-color: #181818;
@@ -720,5 +766,5 @@ body * {
 .map{
     margin-top: 30px;
     margin-left: 190px;
-
+    z-index: 999;
 }
